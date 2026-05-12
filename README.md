@@ -4,4 +4,4 @@ Levy Francisco
 Isaac Goodfellow
 Branden Hough
 Sophia Koshy
-Noe Rios Rodriguez
+Noe Rios
