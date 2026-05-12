@@ -63,7 +63,7 @@ unsigned long previousMillis = 0;
 DHT dht(DHT_PIN, DHT_TYPE);
 
 const unsigned int water_threshold = 200;
-const unsigned int tempThresh = 80;
+const unsigned int tempThresh = 50;
 
 bool isWaterThreshMet = false;
 unsigned int water_value = 0;
@@ -203,7 +203,7 @@ void loop2() {
     ISR_Error();
   } else {
     unsigned long currentMillis = millis();
-    if (currentMillis - previousMillis >= 5000)  //value represents delay in milliseconds
+    if (currentMillis - previousMillis >= (60 * 1000))  //value represents delay in milliseconds
     {
       previousMillis = currentMillis;
 
